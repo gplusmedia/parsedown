@@ -291,7 +291,7 @@ class Parsedown
     #
     # Code
 
-    protected function blockCode($Line, $Block = null)
+    protected function blockCode($Line, ?array $Block = null)
     {
         if (isset($Block) and ! isset($Block['type']) and ! isset($Block['interrupted']))
         {
